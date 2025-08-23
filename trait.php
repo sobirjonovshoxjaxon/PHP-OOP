@@ -38,12 +38,19 @@
         public $color;
 
         //Constructor 
-        use AnimalTrait;
+        public function __construct($name,$color){
 
-        public function makeSound(){
-            return "Vov Vov";
+            $this->name = $name;
+            $this->color = $color;
         }
+
+        //Methods
+        use AnimalTrait;
     }
 
+    $europeDog = new EuropeDog('Buldog','Brown');
+
+    var_dump($europeDog);
+    echo $europeDog->makeSound();
 
 ?>
