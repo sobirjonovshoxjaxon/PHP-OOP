@@ -5,6 +5,7 @@
     Static methodlar ichida Obyektlar ishlamayti masalan $this->name; yoki return $this->name bular umuman ishlamaydi. 
     Umuman olganda static property yoki methods lar classga tegishli bo'ladi ularni class nomi orqali chaqiramiz. 
     Ular umuman obyektlarga tegishli bo'lmaydi! 
+    self, parent, public static $propertyname, public static function method1Name(){}
     */
 
     class Dog {
@@ -39,7 +40,7 @@
     echo Dog::eat() . "<br>";
     echo $bingo->eat() . "<br>";
     echo $bingo->bark() . "<br>";
-    echo $bingo->get_weight(); // This is work
+    echo $bingo->get_weight() . "<br>"; // This is work
     // echo $bingo->weight; // Error
 
 
@@ -49,6 +50,12 @@
             parent::eat();
         }
     }
+
+
+
+
+
+
 
 
 ?>

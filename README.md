@@ -12,4 +12,7 @@
 * 7.Trait
 * 8.Static atributs and methods
 * 9.Constants
+* 10.Namespace
+* 11.Autoloader - class 
+
 
